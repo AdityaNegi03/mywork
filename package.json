@@ -1,16 +1,20 @@
 {
+  "homepage":"http://AdityaNegi03.github.io/mywork",
   "name": "simplefolio",
   "version": "1.0.1",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
   "source": "src/index.html",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "start": "parcel",
     "build": "parcel build"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.8.0"
